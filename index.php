@@ -23,7 +23,7 @@ $name = $_POST['name1'];
    $retval = mail ($email1,$subject,$message,$header);
    $email1="nikita@gamma.robovitics.in";
    $retval = mail ($email1,$subject,$message,$header);
-    $connection = mysql_connect("localhost", "scobbyabhi", "Mahanagar@d70");
+    $connection = mysql_connect("localhost", "", "");
 				  $db = mysql_select_db("details", $connection);
 				  $query = mysql_query("insert into detail(name,regno,email,phone,number,room,clg) values('$name','$regno','$email','$phone','$number','$room','$clg')");
    }
